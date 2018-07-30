@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Header:</strong>
+  <%= @link.header %>
+</p>
+
+<p>
+  <strong>Href:</strong>
+  <%= @link.href %>
+</p>
+
+<p>
+  <strong>Likes:</strong>
+  <%= @link.likes %>
+</p>
+
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>

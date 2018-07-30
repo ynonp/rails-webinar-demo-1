@@ -1,0 +1,16 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.links-list {
+  list-style: none;
+  padding: 0;
+  li {
+    margin: 30px 10px;
+    font-size: 18px;
+  }
+}
+
+body {
+  background: beige;
+}

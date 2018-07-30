@@ -1,0 +1,13 @@
+<h1>Linker Links</h1>
+<ul class="links-list">
+  <% @links.each do |link| %>
+    <li>
+      <% if link.thumbnail.attached? %>
+        <%= image_tag link.thumbnail, class: 'thumbnail', width: 80 %>
+      <% end %>
+      <%= link_to link.header, link.href, target: '_blank' %> [<%= link.likes_count %>]
+      <%= link_to 'Like', like_path(link_id: link.id), method: 'POST' %>
+      <%= link_to 'Unlike', unlike_path(link_id: link.id), method: 'POST' %>
+    </li>
+  <% end %>
+</ul>
